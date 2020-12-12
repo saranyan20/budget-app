@@ -1,0 +1,3 @@
+postgres://qtjskyikoqghvj:c73b1f94c0e15e473a3452a7dc243c168346842d1dcbc1da2cab640810c529cb@ec2-54-157-88-70.compute-1.amazonaws.com:5432/dfb23aqescfj1d
+
+https://budget-app.hasura.app/v1/graphql
