@@ -23,13 +23,9 @@
   "license": "https://coreui.io/pro/license/",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "clearCache": "jest --clearCache",
-    "release": "npm-run-all clearCache lint build test:unit test:e2e"
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
@@ -50,6 +46,7 @@
     "apollo-link-http": "^1.5.17",
     "axios": "^0.21.0",
     "excel-date-to-js": "^1.0.6",
+    "express": "^4.17.1",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "node-sass": "^4.14.1",
