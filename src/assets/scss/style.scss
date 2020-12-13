@@ -1,0 +1,157 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles with default layout.
+@import "~@coreui/coreui-pro/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+.card-header:not(.content-center) > .c-icon:first-child {
+    margin-right: 0.1rem;
+    margin-top: 0.1rem;
+    vertical-align: top;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.bg-primary {
+    background-color: #006d40 !important;
+}
+
+.btn-primary {
+    background-color: #006d40 !important;
+    border-color: #006d40 !important;
+}
+
+.addCategoryModal .modal-footer {
+    display: none !important;
+}
+
+.addParentModel .modal-footer {
+    display: none !important;
+}
+
+.userAuthentication .modal-footer {
+    display: none !important;
+}
+
+.opportunity input {
+    width: 20%;
+}
+
+.goal input {
+    width: 20%;
+}
+
+.vue-quick-edit__link {
+    color: black !important;
+}
+.vue-quick-edit__link--is-clickable {
+    border-bottom: 0px solid black !important;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.vue-quick-edit input {
+    font-size: 1.5rem;
+    border: none !important;
+}
+
+.vue-quick-edit span {
+    font-size: 1.5rem;
+}
+
+.vue-quick-edit textarea {
+    font-size: 1rem;
+    border: none !important;
+}
+
+.vue-quick-edit__buttons {
+    position: relative;
+    bottom: 5px;
+}
+
+// Bootstrap override
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    padding-top: 15px;
+}
+
+//
+.vue-quick-edit textarea {
+    width: 60%;
+    height: 150px !important;
+    padding: 20px;
+}
+
+.vue-quick-edit textarea:focus {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #8ad4ee !important;
+    outline: 0 !important;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+    box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+}
+
+.vue-quick-edit textarea::after {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #8ad4ee !important;
+    outline: 0 !important;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+    box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+}
+
+.vue-quick-edit input {
+    padding: 10px !important;
+    display: inline-block;
+}
+
+.vue-quick-edit input:focus {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #8ad4ee !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+    box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25) !important;
+}
+
+select {
+    -webkit-appearance: listbox !important;
+}
+
+// Register Screen
+.email span {
+    padding-right: 15px !important;
+}
+
+// disable modal footer
+.disable-footer .modal-footer {
+    display: none;
+}
+
+// Scroll bar
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ql-container {
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+.required::after {
+    content: ' *';
+    color: red;
+}
