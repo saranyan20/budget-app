@@ -1,16 +1,12 @@
 module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        useBuiltIns: 'entry',
-        corejs: 3
-      }
-    ]
-  ],
-  plugins: [
-    "transform-vue-jsx",
-    "transform-regenerator"
-  ]
-
-}
+    presets: [
+        [
+            '@babel/preset-env',
+            {
+                useBuiltIns: 'entry',
+                corejs: 3
+            }
+        ]
+    ],
+    plugins: ['transform-vue-jsx', 'transform-regenerator']
+};
