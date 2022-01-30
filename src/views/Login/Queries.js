@@ -1,9 +1,12 @@
 import gql from 'graphql-tag';
 
 const CHECK_LOGIN = gql`
-    query ($user_name: String!, $password: String!) {
+    query($userName: String!, $password: String!) {
         budget_app_login(
-            where: { user_name: { _eq: $user_name }, password: { _eq: $password } }
+            where: {
+                user_name: { _eq: $userName }
+                password: { _eq: $password }
+            }
         ) {
             id
         }

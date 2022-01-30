@@ -23,6 +23,8 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import '@fortawesome/fontawesome-free/css/all.css';
+import '@fortawesome/fontawesome-free/js/all.js';
 
 export const eventBus = new Vue();
 
@@ -45,7 +47,7 @@ Vue.config.productionTip = false;
 
 const link = createHttpLink({
     uri: 'https://budget-app.hasura.app/v1/graphql',
-    fetch,
+    fetch
 });
 
 const client = new ApolloClient({
